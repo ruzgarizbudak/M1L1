@@ -6,8 +6,8 @@ class Height:
 
     def ideal_kg(self):
         if self.boy > 100:
-            self.boy=int(self.boy / 100 )
-            self.index = int(self.kilo / (self.boy * self.boy))
+            self.boy=(self.boy / 100 )
+            self.index = (self.kilo / (self.boy * self.boy))
             if self.index < 18:
                 print('Olması Gerekenden Az Kilo Almalısın')
             elif 18 <= self.index <= 24.9:
@@ -16,7 +16,7 @@ class Height:
                 print('Obezitelik Var, Kilo Vermelisin ve Spor Yap')
             print(self.index)
         else:
-            self.index = int(self.kilo / (self.boy * self.boy))
+            self.index = (self.kilo / (self.boy * self.boy))
             if self.index < 18:
                 print('Olması Gerekenden Az Kilo Almalısın')
             elif 18 <= self.index <= 24.9:
